@@ -10,7 +10,7 @@ function addItem(text) {
     const outputDiv = document.getElementById('output');
     const sidebarList = document.getElementById('sidebarList');
     if (ilk) {
-        sidebarList.innerHTML = ""
+       
         ilk = false
     }
     // Yeni bir öğe oluştur
@@ -126,8 +126,8 @@ const selectedItemsList = document.getElementById('selectedItems');
 // Select elementinde seçim değişikliği olduğunda çalışacak işlevi tanımlayın
 selectElement.addEventListener('change', function () {
     // UL listesini temizleyin
+   
     selectedItemsList.innerHTML = '';
-
     // Seçilen option öğelerini alın
     const selectedOptions = Array.from(selectElement.selectedOptions);
 
@@ -148,7 +148,7 @@ document.getElementById('addExperienceButton').addEventListener('click', functio
     const tarixbitme = document.getElementById('inputTarixbitme').value;
     const vezife = document.getElementById('inputVezife').value;
     if (ilkexom) {
-        document.getElementById('experienceCarduli').innerHTML = ""
+      
         ilkexom = false
 
     }
@@ -249,7 +249,7 @@ document.getElementById('addEdicatioButton').addEventListener('click', function 
 
     if (ixtisas && name) {
        if (ilkedication) {
-        document.getElementById('edicasionCarduli').innerHTML=""
+       
         ilkedication=false
        }
         const educationCard = document.createElement('div');
@@ -314,7 +314,7 @@ document.getElementById('addProjectButton').addEventListener('click', function (
 
     if (ixtisas && name) {
        if (ilkproject) {
-        document.getElementById('projectContainerli').innerHTML=""
+      
         ilkproject=false
        }
         const educationCard = document.createElement('div');
@@ -323,7 +323,7 @@ document.getElementById('addProjectButton').addEventListener('click', function (
         const textContainer = document.createElement('div');
 
         const ixtisasElement = document.createElement('p');
-        ixtisasElement.textContent = `Ixtisas: ${ixtisas.toUpperCase()}`;
+        ixtisasElement.textContent = `Ixtisas: ${ixtisas}`;
         textContainer.appendChild(ixtisasElement);
 
         const nameElement = document.createElement('p');
@@ -351,7 +351,7 @@ document.getElementById('addProjectButton').addEventListener('click', function (
 
         const ixtisasHeader = document.createElement('h2');
         ixtisasHeader.className = 'text-[20px] font-medium';
-        ixtisasHeader.textContent = ixtisas.toUpperCase();
+        ixtisasHeader.textContent = ixtisas;
         educationItem.appendChild(ixtisasHeader);
 
         const nameDiv = document.createElement('div');
